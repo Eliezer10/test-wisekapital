@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('/assets/img/background.jpg') no-repeat center center fixed;
+  background: url('https://eliezer10.github.io/test-wisekapital/assets/img/background.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   color: white;
