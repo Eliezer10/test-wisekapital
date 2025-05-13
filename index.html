@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test - WiseKapital</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+          <div class="form-container" id="formContainer">
+            <h1 class="heading">ADPLAY <br>PARTNERS</h1>
+            <p class="subtitle">& GlitchSpin Affilliates</p>
+            <p class="textsub1">Your Affilliate Solution</p>
+            <p class="textsub2">TRUSKY WAY TO ERAN MORE!</p>
+
+            <form id="registerForm">
+              <input type="text" id="name" placeholder="Name" required />
+              <input type="email" id="email" placeholder="Email" required />
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+    
+          <div class="success-message" id="successMessage">
+            <h2>Successful registration!</h2>
+            <p>
+                Thank you for registering. We will be in touch soon.</p>
+            <button onclick="location.reload()">OK</button>
+          </div>
+        </div>
+        
+    </div>
+    
+      <script>
+        const form = document.getElementById('registerForm');
+        const formContainer = document.getElementById('formContainer');
+        const successMessage = document.getElementById('successMessage');
+    
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          formContainer.style.display = 'none';
+          successMessage.style.display = 'block';
+        });
+      </script>
+  </body>
+</html>
